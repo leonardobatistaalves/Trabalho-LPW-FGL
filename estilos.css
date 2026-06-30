@@ -201,6 +201,15 @@ p.Copa-2014 {
     box-shadow: 0 8px 20px rgba(0,0,0,.2);
 }
 
+footer{
+    background: #002776;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
 @media (max-width: 900px) {
     .galeria-conquistas {
         grid-template-columns: repeat(2, 1fr);
