@@ -1,0 +1,60 @@
+@keyframes slideDownBounce {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(8px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes cardEnter {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+h1 {
+    animation: slideDownBounce 0.8s ease-out;
+}
+
+.texto-intro {
+    animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+
+.jogador {
+    opacity: 0;
+    animation: cardEnter 0.6s ease-out forwards;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.jogador:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
