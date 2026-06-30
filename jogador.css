@@ -90,3 +90,11 @@ body{
     box-shadow: 0 0 30px rgba(255, 215, 0, 1);
   }
 }
+footer{
+    background: #002776;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    font-size: 20px;
+}
