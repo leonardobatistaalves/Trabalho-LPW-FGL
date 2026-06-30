@@ -1,7 +1,15 @@
 h1{
+    background: linear-gradient(to right,#009739,#00852f);
+    color: white;
     text-align: center;
-    font-size: 50px;
-    text-shadow: 1px 1px 2px gray;
+    padding: 25px;
+    margin-bottom: 35px;
+    border-radius: 15px;
+    font-size: 48px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.35);
+    text-shadow: 2px 2px 5px black;
+    animation: titulo 1s ease;
+    transition: .4s;
 }
 p{
     font-size: 30px;
@@ -9,7 +17,8 @@ p{
     text-align: center;
 }
 body{
-    background-color: white;
+    background: linear-gradient(135deg, #009739, #25b94d, #f4f4f4);
+    color: #222;
 }
 .jogadores {
     display: grid;
@@ -97,4 +106,32 @@ footer{
     padding: 25px;
     margin-top: 50px;
     font-size: 20px;
+}
+header {
+    background: yellow;
+    padding: 10px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    width: 200px;
+    text-align: center;
+    color: black;
+    font-family: cursive;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    background: rgba(0,0,0,0.1);
+    transform: translateY(-2px);
 }
